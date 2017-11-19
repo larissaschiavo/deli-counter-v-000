@@ -17,3 +17,10 @@ def take_a_number(counter_line, customer_name)
   counter_line << customer_name
   puts "Welcome, #{customer_name}. You are number #{counter_line.length} in line."
 end
+
+def now_serving(counter_line)
+  if counter_line.empty?
+    puts "There is nobody waiting to be served!"
+  else
+    puts "Now serving #{counter_line[0]}"
+end
